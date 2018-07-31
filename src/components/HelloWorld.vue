@@ -2,6 +2,9 @@
   <div class="hello">
     <h1>{{ msg }}</h1>
       
+    <h2>Essential Links</h2>
+   
+
     <div class="number-box" style="margin:20px 0;">
       <button @click="plus">加 一</button>
       <input type="text" v-model="number" style="padding-left:20px;">
@@ -18,6 +21,13 @@
     <button @click="getStudentList">获取成绩榜单</button>
     <div v-if="students.length>0">
       <h4 >成绩榜单</h4>
+      <span style="color:blue;margin-right:20px">{{userInfo.name}}</span>
+      <span style="color:red;margin-right:20px">{{userInfo.gender}}</span>
+      <span style="color:blue;margin-right:20px">{{userInfo.age}}</span>
+    </div>
+
+    <div>
+      <h4 @click="getStudentList">成绩榜单</h4>
       <ul>
         <li v-for="item in students" :key="item.id">
           <span>{{item.name}}</span>
@@ -106,4 +116,6 @@ a {
 .age{
   color:blue;margin-right:20px
 }
+=======
+>>>>>>> dev
 </style>
