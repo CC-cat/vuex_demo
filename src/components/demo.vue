@@ -1,13 +1,7 @@
 <template>
   <div class="hello">
     <h1>{{ msg }}</h1>
-<<<<<<< HEAD
-    <h2>Essential Links</h2>
-   
-
-=======
       
->>>>>>> 60e3b0e6976b5016601e4e028a98cf1db1b1802d
     <div class="number-box" style="margin:20px 0;">
       <button @click="plus">加 一</button>
       <input type="text" v-model="number" style="padding-left:20px;">
@@ -16,15 +10,6 @@
 
     <button @click="getUserInfo">获取用户信息</button>
     <div class="user-info" v-if="userInfo">
-<<<<<<< HEAD
-      <span style="color:blue;margin-right:20px">{{userInfo.name}}</span>
-      <span style="color:red;margin-right:20px">{{userInfo.gender}}</span>
-      <span style="color:blue;margin-right:20px">{{userInfo.age}}</span>
-    </div>
-
-    <div>
-      <h4 @click="getStudentList">成绩榜单</h4>
-=======
       <span class="name" >{{userInfo.name}}</span>
       <span class="gender" >{{userInfo.gender}}</span>
       <span class="age">{{userInfo.age}}</span>
@@ -33,7 +18,6 @@
     <button @click="getStudentList">获取成绩榜单</button>
     <div v-if="students.length>0">
       <h4 >成绩榜单</h4>
->>>>>>> 60e3b0e6976b5016601e4e028a98cf1db1b1802d
       <ul>
         <li v-for="item in students" :key="item.id">
           <span>{{item.name}}</span>
@@ -44,13 +28,10 @@
   </div>
 </template>
 
-<<<<<<< HEAD
-=======
 <style>
 
 </style>
 
->>>>>>> 60e3b0e6976b5016601e4e028a98cf1db1b1802d
 <script>
 export default {
   name: 'HelloWorld',
@@ -112,8 +93,6 @@ li {
 a {
   color: #42b983;
 }
-<<<<<<< HEAD
-=======
 .user-info{
   margin-top:20px;
   margin-bottom:20px;
@@ -127,5 +106,4 @@ a {
 .age{
   color:blue;margin-right:20px
 }
->>>>>>> 60e3b0e6976b5016601e4e028a98cf1db1b1802d
 </style>
