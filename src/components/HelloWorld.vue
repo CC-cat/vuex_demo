@@ -9,14 +9,14 @@
       <input type="text" v-model="number" style="padding-left:20px;">
       <button @click="minus">减 一</button>
     </div>
-
+    
     <button @click="getUserInfo">获取用户信息</button>
     <div class="user-info" v-if="userInfo">
       <span style="color:blue;margin-right:20px">{{userInfo.name}}</span>
       <span style="color:red;margin-right:20px">{{userInfo.gender}}</span>
       <span style="color:blue;margin-right:20px">{{userInfo.age}}</span>
     </div>
-
+    
     <div>
       <h4 @click="getStudentList">成绩榜单</h4>
       <ul>
